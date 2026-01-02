@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>urbanimpact</title>
-    <!-- icons -->
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
     <!-- header -->
     <header>
         <nav class="up-nav">
             <ul>
-                <li><a href="604.273.0089">604.273.0089</span></a></li>
-                <li><a href="email">info@urbanimpact.com</a></li>
-                <li><a href="location">Locally owned & operated, servicing Vancouver, Richmond, Survey, Abbotsford & more</a></li>
+                <li><a href="tel:604.273.0089"><i class="bi bi-telephone-fill"></i> <p> 604.273.0089 </p></a></li>
+                <li><a href="mailto:email"><i class="bi bi-envelope-fill"></i> <p>info@urbanimpact.com</p></a></li>
+                <li><a href="location"><i class="bi bi-geo-alt-fill"></i> <p>Locally owned & operated, servicing Vancouver, Richmond, Survey, Abbotsford &
+                        more</p></a></li>
             </ul>
         </nav>
 
         <nav class="main-nav">
-
             <div class="logo">
                 <a href="">
-                    <img src="./assets/img/logo.webp" height="90px">
+                    <img src="./img/logo.webp" height="90px">
                 </a>
             </div>
 
+            <!-- Menu -->
             <div class="menu">
-                <ul>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#services">INDUSTRIES SERVED</a></li>
-                    <li><a href="#services">BLOG</a></li>
-                    <li><a href="#services">PEOPLE</a></li>
-                    <li><a href="#services">CUSTOMER PORTAL</a></li>
-                    <li><input type="search" name="search" id="search" placeholder="SEARCH"></li>
-                    <li><button>GET A FREE QUOTE</button></li>
-                </ul>
-            </div>
 
+                <!-- Hamburger -->
+                <div class="hamburger" >
+                    <i class="bi bi-list"></i>    
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#industries">INDUSTRIES SERVED</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#people">PEOPLE</a></li>
+                        <li><a href="#portal">CUSTOMER PORTAL</a></li>
+                        <li class="src">
+
+                            <input type="search" placeholder="SEARCH" id="search" />
+                            <i class="bi bi-search"></i>
+                        </li>
+                    </ul>
+                </div>
+                <button>GET A FREE QUOTE</button>
+            </div>
         </nav>
     </header>
 
@@ -43,54 +58,317 @@
     <main>
         <!-- main page -->
         <div class="media-page">
-            <img src="" alt="" class="bg">
-            <div class="comp-name">
-                <img src="./assets/img/urban.png" alt="">
-            </div>
-            <h2>Recycling at work</h2>
-            <p>For 35 years, Urban Impact has helped our customers with their waste, recycling, shredding, product destruction, auditing and reporting needs.</p>
-            <button>GET A FREE QUOTE</button>
+            <section class="banner-content">
+                <div class="comp-name">
+                    <img src="./img/urban.png" alt="">
+                </div>
+                <p class="slogan">Recycling at work</p>
+                <p class="abt-slgn">For 35 years, Urban Impact has helped our customers with their waste, recycling,
+                    shredding, product destruction, auditing and reporting needs.</p>
+                <button>GET A FREE QUOTE</button>
+            </section>
+        </div>
 
-            <!-- services box -->
-             <div class="services-box">
+        <!-- services box -->
+        <section class="services-box">
+
+            <div class="recycling box">
+
+                <div class="service">
+                    <div>
+                        <img src="./img/recycle.svg" alt="recycle">
+                        <p class="text">Recycling</p>
+                    </div>
+                    <h4>LEARN MORE>></h4>
+                </div>
+                <p class="moto">Urban Impact can scale our recycling services for any size business</p>
+                <div>
+                    <img src="./img/recycle.svg" class="bgimg" alt="recycle">
+                </div>
+
+            </div>
+
+            <div class="shredding box">
+
+                <div class="service">
+                    <div>
+                        <img src="./img/shredding.png" alt="recycle">
+                        <p class="text">Shredding</p>
+                    </div>
+                    <h4>LEARN MORE>></h4>
+                </div>
+                <p class="moto">Urban Impact will shred and destroy your sensitive documents on site and in compliance with privacy laws.</p>
+                <div>
+                    <img src="./img/shredding.png" class="bgimg" alt="recycle">
+                </div>
+
+            </div>
+
+            <div class="garbage box">
+
+                <div class="service">
+                    <div>
+                        <img src="./img/garbage.png" alt="recycle">
+                        <p class="text">Garbage</p>
+                    </div>
+                    <h4>LEARN MORE>></h4>
+                </div>
+                <p class="moto">Urban Impact will manage your waste, with a range of collection services, suited to your requirements.</p>
+                <div>
+                    <img src="./img/garbage.png" class="bgimg" alt="recycle">
+                </div>
+
+            </div>
+
+            <div class="solutions box">
+
+                <div class="service">
+                    <div>
+                        <img src="./img/solution.png" alt="recycle">
+                        <p class="text">Solution</p>
+                    </div>
+                    <h4>LEARN MORE>></h4>
+                </div>
+                <p class="moto">Urban Impact provides our customers with comprehensive, expert advice and services for all your waste, recycling, shredding, reporting and auditing needs.</p>
+                <div>
+                    <img src="./img/solution.png" class="bgimg" alt="recycle">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about">
+            <div class="left-exp-img">
+                <img src="./img/work.png" alt="">
+            </div>
+
+            <div class="right-exp-about">
+                <div class="top-text">
+                    <p>Proudly Canadian & Servicing Our Local Communities</p>
+                </div>
+                <div class="mid-bold-text">
+                    <p>Urban Impact is committed to outstanding customer service & safety!</p>
+                </div>
+                <div class="last-abt-text">
+                    <p>
+                        For 35 years, Urban Impact has been a leader in waste management strategies and solutions. From
+                        single pick-up to enterprise-wide recycling, shredding and waste collection, we have a solution
+                        for you! <br><br> Work safely, always! This is our first, of thirteen, company cultural values.
+                        We
+                        are proud winners of the 2024 Innovation Award at Safety Pinnacle Awards.
+                    </p>
+                </div>
+                <button>READ MORE ABOUT US</button>
+            </div>
+        </section>
+
+        <!-- customer portal -->
+        <section class="customer-portal">
+            <div class="portal">
+                <div class="left-mob-img">
+                    <img src="./img/mobile.png" alt="mobileservice">
+                </div>
+                <div class="mob-service-content">
+                    <div class="top-text">
+                        <p>Get More Done</p>
+                    </div>
+                    <div class="mid-bold-text">
+                        <p>CUSTOMER PORTAL</p>
+                    </div>
+                    <div class="about-cp">
+                        <p>
+                            Customer Portal is the place where Urban Impact customer can pay their bill and manage their
+                            Urban Impact account. The Customer portal fetures:
+                        </p>
+                        <div class="features-cp">
+                            <ul>
+                                <li><strong>Auto-pay your invoice:</strong><span> Enroll in autopay.</span></li>
+                                <li><strong>Paperless invoicing:</strong><span> Enroll in paperless email
+                                        billing.</span></li>
+                                <li><strong>Online payments:</strong><span> Pay invoices easily online wiht a safe and
+                                        secure online paymnet service.</span></li>
+                                <li><strong>Service scheduling and calendar:</strong><span> View and confirm your
+                                        collection days.</span></li>
+                                <li><strong>Add or change services: </strong><span> Add or request a change of service
+                                        schedule online.</span></li>
+                                <li><strong>Account updates: </strong><span> Notify us of an address or contact
+                                        chagne.</span></li>
+                            </ul>
+                        </div>
+                        <button>LOG IN TODAY!</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- join team -->
+        <section class="join-team">
+            <div class="upper-content">
                 <ul>
                     <li>
-                        <div class="recycling">
-                            
+                        <div class="first">
+                            <p class="first-text">Let's work together</p>
+                            <p class="second-text">JOIN THE URBAN IMPACT TEAM</p>
                         </div>
                     </li>
-
                     <li>
-                        <div class="shredding">
-                            
-                        </div>
-                    </li>
+                        <div class="sec">
 
-                    <li>
-                        <div class="garbage">
-                            
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="solutions">
-                            
+                            <p class="first-text">
+                                We ar looking or great people to join the Urban Imapact team!
+                            <p>
+                            <p class="second-text">
+                                Urban Impact is a growing compan. We are looking for solution-oriented people with a
+                                common goal to help our customers and the enviroment. <br> Chek out our current
+                                openings.
+                            </p>
                         </div>
                     </li>
                 </ul>
-             </div>
+            </div>
+            <div class="formedia">
+                <div class="lower-content">
+                    <ul>
+                        <li class="line">
+                            <div><img src="./img/hand.png" alt="plantandhand"></div><span>A growth-oriented company, we
+                                share a common goal to amaze our customers.</span>
+                        </li>
+                        <li>
+                            <div><img src="./img/man.png" alt="man"></div><span>We're passionate about creating
+                                innovative
+                                recycling solutions.</span>
+                        </li>
+                    </ul>
+                    <button>JOIN THE TEAM NOW!</button>
+                </div>
+                <div class="video">
+                    <video src="./video/Rear Load Truck FB ad V2.mp4" autoplay="autopay" controls="controls"
+                        loop="loop" muted="muted" preload="metadata" ></video>
+                </div>
+            </div>
+        </section>
 
-        </div>    
 
-        
-
-
-        <!-- about -->
-        <!-- customer portal -->
-        <!-- join team -->
         <!-- blog -->
+        <section class="blog">
+            <p class="first-text">What's new at Urban Impact</p>
+            <p class="sec-text">OUR LATEST BLOG POSTS</p>
+            <div class="boxes">
+                <div class="box">
+                    <img src="./img/first.png" alt="firstimage" height="300" width="100%">
+                    <div class="blog-content">
+                        <p class="date">December 22nd, 2025</p>
+                        <p class="heading">2025 Cause We Care Foundation Holiday Drive</p>
+                        <p class="blog">
+                            Earlier this holiday season, Urban Impact proudly partnered with the Cause We Care
+                            Foundation by donating our Mega Bags for their 19th annual Holiday Care Package Drive. The
+                            organization had over 100 volunteers creating and delivering 1,200 Care Packages to 40
+                            frontline organizations across British Columbia's Lower Mainland making the season brighter
+                            for those struggling during the holidays
+                        </p>
+                        <h3>READ MORE</h3>
+                    </div>
+                </div>
+                <div class="right-boxes">
+                    <div class="box box2">
+                        <img src="./img/sec.png" alt="secondimage" width="400px" height="300px">
+                        <div class="blog-content">
+                            <p class="date">December 22nd, 2025</p>
+                            <p class="heading">2025 Cause We Care Foundation Holiday Drive</p>
+                            <p class="blog">
+                                Earlier this holiday season, Urban Impact proudly partnered with the Cause We Care
+                                Foundation by donating our Mega Bags for their 19th annual Holiday Care Package Drive.
+                                The organization had over 100 volunteers creating and delivering 1,200 Care Packages to
+                                40 frontline organizations across British Columbia's Lower Mainland making the season
+                                brighter for those struggling during the holidays
+                            </p>
+                            <h3>READ MORE</h3>
+                        </div>
+                    </div>
+                    <div class="box box2">
+                        <img src="./img/third.png" alt="thirdimage" width="225px" height="300px">
+                        <div class="blog-content">
+                            <p class="date">December 22nd, 2025</p>
+                            <p class="heading">2025 Cause We Care Foundation Holiday Drive</p>
+                            <p class="blog">
+                                Earlier this holiday season, Urban Impact proudly partnered with the Cause We Care
+                                Foundation by donating our Mega Bags for their 19th annual Holiday Care Package Drive.
+                                The organization had over 100 volunteers creating and delivering 1,200 Care Packages to
+                                40 frontline organizations across British Columbia's Lower Mainland making the season
+                                brighter for those struggling during the holidays
+                            </p>
+                            <h3>READ MORE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
+
     <!-- footer -->
+    <footer>
+        <div class="log">
+            <img src="./img/footerlogo.png" alt="companylogo" width="150px">
+        </div>
+        <div class="menu-items">
+            <div class="first items">
+                <ul>
+                    <li><a href="">Recycling</a></li>
+                    <li><a href="">shredding</a></li>
+                    <li><a href="">Garbage</a></li>
+                    <li><a href="">Production Destruction</a></li>
+                    <li><a href="">Roll Off Bins</a></li>
+                    <li><a href="">Low Pro Compactors</a></li>
+                </ul>
+            </div>
+            <div class="sec items">
+                <ul>
+                    <li><a href="">Industries Served</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Customer Portal</a></li>
+                    <li><a href="">Online Tools</a></li>
+                    <li><a href="">Get a quote</a></li>
+                    <li><a href="">Our Story</a></li>
+                </ul>
+            </div>
+            <div class="third items">
+                <ul>
+                    <li><a href="">Join Our Team</a></li>
+                    <li><a href="">Current Openings</a></li>
+                    <li><a href="">Indigenous Initiatives</a></li>
+                    <li><a href="">S-211 Report</a></li>
+                    <li><a href="">Educational Programs</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="details">
+            <ul>
+                <li><a href="#location">5 Capilano Way New Westminster, BC V3L 5G3</a></li>
+                <li><a href="#phone">604.273.0089</a></li>
+                <li><a href="#mail">info@urbanimpact.com</a></li>
+                <li><a href="#worktime">Man to Fri 8.00am to 4.00pm</a></li>
+                <li>
+                    <ul class="media-links">
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class="bi bi-facebook"></i> </a></li>
+                        <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <section class="rights">
+        <h3>&copy;Copyright 2025 <a href="www.urbanimpact.com">www.urbanimpact.com</a> : All Rights Reserved</h3>
+    </section>
+
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

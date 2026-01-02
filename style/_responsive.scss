@@ -1,0 +1,292 @@
+@media (max-width: 768px) {
+  header {
+    .up-nav ul {
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      padding-inline: 20px;
+
+      li a {
+        font-weight: 700;
+        font-size: 1.1rem;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 6px;
+
+      }
+    }
+
+    .main-nav {
+      padding-inline: 20px;
+      //   flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+
+      .logo a img{
+        height: 75px;
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 1.5rem;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start ;
+        align-content: flex-start;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        .menu-items {
+          position: fixed;
+          top: 274px;
+          height: fit-content;
+          width: 90vw;
+          background: #ffffff;
+          padding: 30px 20px;
+          transition: right 0.3s ease;
+          box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+          z-index: 100;
+          display: none;
+
+          &.active{
+            display: flex;
+          }
+
+          ul{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            height: fit-content;
+            width: 100%;
+          }
+        }
+
+        button{
+          font-size: 12px;
+          font-weight: 900;
+        }
+
+      }
+    }
+  }
+
+  //   main
+  main {
+    .media-page {
+      padding-inline: 20px;
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.481),
+          rgba(255, 255, 255, 0.538)
+        ),
+        url(../img/image.png);
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+
+      .banner-content {
+        .comp-name img {
+          width: 150px;
+        }
+
+        .slogan {
+          font-size: 2.5rem;
+        }
+
+        .abt-slgn {
+          font-size: 18px;
+          width: 90vw;
+        }
+      }
+    }
+
+    .services-box {
+      padding-inline: 20px;
+      margin-inline: 0;
+      padding-block: 50px;
+      flex-direction: column;
+      translate: none;
+      position: relative;
+      height: 100%;
+
+      .box {
+        height: 25%;
+        width: 100%;
+      }
+
+      .bgimg {
+        top: 90px;
+      }
+
+    }
+
+    .about {
+      padding-inline: 20px;
+      padding-top: 0;
+      padding-bottom: 50px;
+      flex-direction: column;
+
+      .left-exp-img img {
+        height: 388px;
+        width: 388px;
+      }
+
+      .right-exp-about {
+        .top-text p {
+          font-weight: 300;
+        }
+
+        .mid-bold-text p {
+          font-weight: 900;
+          font-size: 2.7rem;
+        }
+
+        button {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .customer-portal {
+      padding-inline: 20px;
+
+      .portal {
+        flex-direction: column;
+
+        .left-mob-img img {
+          width: 100%;
+          height: auto;
+        }
+
+        .mob-service-content {
+          .top-text {
+            font-weight: 300;
+          }
+
+          .mid-bold-text {
+            font-size: 2.3rem;
+          }
+        }
+      }
+    }
+
+    .join-team {
+      padding-inline: 20px;
+      width: 100%;
+      padding-bottom: 40px;
+      background-size: cover;
+      background-position: center;
+      height: auto;
+
+      .upper-content {
+        ul {
+          width: 100%;
+          flex-direction: column;
+
+          .first {
+            .second-text {
+              width: 100vw;
+            }
+          }
+        }
+      }
+
+      .formedia {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+
+        .lower-content {
+          float: none;
+          width: 100%;
+
+          ul {
+            width: 100%;
+
+            li {
+              gap: 15px;
+              justify-content: center;
+              padding-top: 10px;
+            }
+          }
+
+          button {
+            margin-top: 30px;
+            width: 100%;
+          }
+        }
+
+        .video {
+          position: relative;
+          translate: none;
+
+          video {
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .blog{
+        padding-inline: 20px;
+        padding-top: 100px;
+
+        .sec-text{
+            font-size: 2.3rem;
+        }
+
+        .boxes{
+            flex-direction: column;
+            gap: 40px;
+
+            .box{
+                width: 100%;
+                height: auto;
+            }
+
+            .right-boxes{
+                width: 100%;
+                gap: 40px;
+
+                .box2{
+                    flex-direction: column;
+                    width: 100%;
+                    height: auto;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        .box{
+            
+        }
+    }
+
+  }
+
+  footer{
+    padding-inline: 20px;
+    flex-direction: column;
+    gap: 20px;
+
+    .menu-items{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+  }
+
+
+}
