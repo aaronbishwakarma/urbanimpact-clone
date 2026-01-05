@@ -1,11 +1,17 @@
 @use "mixins";
 
+@import url(https://db.onlinewebfonts.com/c/50caebd3d1f303be2ec212f78f8c084e?family=VAG+Rounded+Std+Bold);
+@import url(https://db.onlinewebfonts.com/c/21b0e9c93e5b240b0c3b22793c0f3169?family=VAG+Rounded+Std+Light);
+
+
 $primary-color: #198754;
 $sec-color: #20c997;
 $btn-color: #ffc107;
 $text-primColor: #000;
 $text-secColor: #fff;
 $paddinginline: 300px;
+$font-family-bold: "VAG Rounded Std Bold";
+$font-family-light: "VAG Rounded Std Light";
 
 * {
   margin: 0;
@@ -39,14 +45,15 @@ header {
       align-content: center;
       gap: 5px;
       width: 100%;
+      font-family: $font-family-light;
 
       i {
         font-size: 1rem;
       }
 
       p {
-        font-size: 1.3rem;
-        font-weight: 900;
+        font-size: 1.1rem;
+        font-weight: 600;
       }
     }
   }
@@ -83,7 +90,7 @@ header {
         .src{
           border: 3px solid black;
           border-radius: 6px;
-          padding-inline: 10px;
+          padding-inline: 16px;
         }
 
         #search {
@@ -93,13 +100,15 @@ header {
           border-radius: 6px;
           outline: none;
           border: none;
+          font-family: $font-family-light;
         }
       }
     }
 
     button {
       font-size: 16px;
-      font-weight: 800;
+      // font-weight: 800;
+      font-family: $font-family-bold;
       padding-block: 14px;
       padding-inline: 9px;
       border-radius: 4px;
@@ -133,25 +142,27 @@ main {
 
       .slogan {
         font-size: 60px;
-        font-weight: 900;
+        font-weight: 800;
+        font-family: $font-family-bold;
       }
 
       .abt-slgn {
         font-size: 1.6rem;
         font-weight: 500;
-        padding-block: 24px;
+        padding-block: 20px;
         color: #343333;
+        font-family: $font-family-light;
       }
 
       button {
-        font-size: 16px;
-        font-weight: 300;
+        font-size: 1.2rem;
         padding-block: 14px;
         padding-inline: 12px;
         border-radius: 4px;
         background: $btn-color;
         cursor: pointer;
         border: none;
+        font-family: $font-family-bold;
       }
     }
   }
@@ -183,6 +194,13 @@ main {
           opacity: 1;
           color: #fff;
           font-size: 1.2rem;
+          font-family: $font-family-light;
+
+          a{
+            &:hover{
+              cursor: pointer;
+            }
+          }
         }
 
         .service img{
@@ -191,10 +209,12 @@ main {
 
         .text{
           color: #fff;
+          font-family: $font-family-bold;
         }
 
         .moto{
           color: #fff;
+          font-family: $font-family-light;
         }
       }
     }
@@ -211,12 +231,17 @@ main {
 
     .text {
       font-size: 2rem;
-      font-weight: 900;
+      // font-weight: 900;
       padding-top: 10px;
+      font-family: $font-family-bold;
     }
 
     .service h4 {
       opacity: 0;
+
+      a{
+        color: white;
+      }
     }
 
     .moto {
@@ -224,6 +249,7 @@ main {
       font-weight: 600;
       color: #5b5b5b;
       padding-bottom: 10px;
+      font-family: $font-family-light;
     }
 
     .bgimg {
@@ -238,7 +264,8 @@ main {
 
   .about {
     padding-inline: $paddinginline;
-    padding-top: 230px;
+    padding-top: 300px;
+    padding-bottom: 50px;
     display: flex;
     align-items: center;
     gap: 60px;
@@ -249,21 +276,27 @@ main {
         font-size: 1.5rem;
         font-weight: 700;
         padding-block: 16px;
+        font-family: $font-family-light;
       }
 
       .mid-bold-text p {
         font-size: 3.5rem;
-        font-weight: 900;
+        font-weight: 800;
+        font-family: $font-family-bold;
       }
 
       .last-abt-text p {
         font-size: 1.4rem;
         padding-block: 16px;
         font-weight: 300;
+        font-family: $font-family-light;
+
       }
 
       button {
         @include mixins.button($primary-color);
+        font-family: $font-family-bold;
+
       }
     }
   }
@@ -288,13 +321,15 @@ main {
         .top-text {
           color: $sec-color;
           font-size: 1.5rem;
-          font-weight: 700;
+          font-weight: 500;
           padding-block: 16px;
+          font-family: $font-family-light;
         }
 
         .mid-bold-text {
           font-size: 3.5rem;
-          font-weight: 900;
+          font-weight: 800;
+          font-family: $font-family-bold;
         }
 
         .about-cp {
@@ -302,12 +337,14 @@ main {
             font-size: 1.2rem;
             padding-block: 16px;
             font-weight: 300;
+            font-family: $font-family-light;
           }
 
           .features-cp {
             font-size: 1.2rem;
             font-weight: 300;
             padding-bottom: 24px;
+            font-family: $font-family-light;
 
             ul {
               display: flex;
@@ -327,6 +364,7 @@ main {
 
         button {
           @include mixins.button($btn-color);
+          font-family: $font-family-bold;
         }
       }
     }
@@ -349,21 +387,24 @@ main {
           .first-text {
             color: $text-secColor;
             font-size: 1.4rem;
+            font-family: $font-family-light;
           }
 
           .second-text {
             color: $text-secColor;
-            font-size: 2.6rem;
-            font-weight: 800;
+            font-size: 3rem;
+            // font-weight: 800;
             padding-block: 25px;
+            font-family: $font-family-bold;
           }
         }
 
         .sec {
           .first-text {
             color: $text-secColor;
-            font-size: 1.3rem;
-            font-weight: 800;
+            font-size: 1.4rem;
+            // font-weight: 800;
+            font-family: $font-family-bold;
           }
           .second-text {
             color: $text-secColor;
@@ -371,6 +412,7 @@ main {
             text-wrap: wrap;
             padding-block: 25px;
             line-height: 1.3;
+            font-family: $font-family-light;
           }
         }
       }
@@ -387,6 +429,7 @@ main {
           align-items: center;
           gap: 25px;
           padding-block: 10px;
+          font-family: $font-family-light;
         }
         
         .line{
@@ -403,6 +446,7 @@ main {
       button {
         @include mixins.button($btn-color);
         margin-top: 64px;
+        font-family: $font-family-bold;
       }
     }
 
@@ -420,14 +464,15 @@ main {
 
   .blog {
     padding-inline: $paddinginline;
-    padding-top: 200px;
+    padding-top: 300px;
     padding-bottom: 90px;
 
     .first-text {
       font-size: 1.6rem;
-      font-weight: 300;
+      font-weight: 500;
       color: $sec-color;
       text-align: center;
+      font-family: $font-family-light;
     }
 
     .sec-text {
@@ -435,24 +480,25 @@ main {
       font-weight: 800;
       text-align: center;
       padding-block: 12px;
+      font-family: $font-family-bold;
     }
 
     .boxes {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 60px;
       height: 100%;
     }
 
     .box {
       width: 560px;
-      box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.509);
-      padding-bottom: 40px;
-      height: 100%;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.509);
+      align-self: stretch;
     }
 
     .blog-content {
-      padding: 32px 20px;
+      padding: 20px 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -460,25 +506,29 @@ main {
 
     .date {
       @include mixins.date($sec-color);
+      font-family: $font-family-light
     }
 
     .heading {
       @include mixins.heading;
+      font-family: $font-family-light
     }
 
     .blog {
       @include mixins.blog;
       padding: 0;
+      font-family: $font-family-light;
     }
 
     h3 {
       color: $sec-color;
+      font-family: $font-family-light;
     }
 
     .right-boxes {
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 40px;
       // height: auto;
     }
 
@@ -500,6 +550,7 @@ footer {
   .menu-items {
     display: flex;
     gap: 50px;
+    font-family: $font-family-light;
 
     .items {
       ul li {
@@ -518,6 +569,7 @@ footer {
       a {
         color: $text-secColor;
         font-size: 1.2rem;
+        font-family: $font-family-light;
         i {
           color: white;
         }
@@ -525,7 +577,7 @@ footer {
       .media-links {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
       }
     }
   }
@@ -541,6 +593,7 @@ footer {
     margin-inline: 6px;
     color: green;
     text-decoration: underline;
+    font-family: $font-family-light;
   }
 }
 

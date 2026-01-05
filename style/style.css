@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/50caebd3d1f303be2ec212f78f8c084e?family=VAG+Rounded+Std+Bold);
+@import url(https://db.onlinewebfonts.com/c/21b0e9c93e5b240b0c3b22793c0f3169?family=VAG+Rounded+Std+Light);
 * {
   margin: 0;
   padding: 0;
@@ -30,13 +32,14 @@ header .up-nav ul li a {
   align-content: center;
   gap: 5px;
   width: 100%;
+  font-family: "VAG Rounded Std Light";
 }
 header .up-nav ul li a i {
   font-size: 1rem;
 }
 header .up-nav ul li a p {
-  font-size: 1.3rem;
-  font-weight: 900;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 header .main-nav {
   display: flex;
@@ -68,7 +71,7 @@ header .main-nav .menu ul li a {
 header .main-nav .menu ul .src {
   border: 3px solid black;
   border-radius: 6px;
-  padding-inline: 10px;
+  padding-inline: 16px;
 }
 header .main-nav .menu ul #search {
   font-size: 16px;
@@ -77,10 +80,11 @@ header .main-nav .menu ul #search {
   border-radius: 6px;
   outline: none;
   border: none;
+  font-family: "VAG Rounded Std Light";
 }
 header .main-nav button {
   font-size: 16px;
-  font-weight: 800;
+  font-family: "VAG Rounded Std Bold";
   padding-block: 14px;
   padding-inline: 9px;
   border-radius: 4px;
@@ -112,23 +116,25 @@ main .media-page .banner-content {
 }
 main .media-page .banner-content .slogan {
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 800;
+  font-family: "VAG Rounded Std Bold";
 }
 main .media-page .banner-content .abt-slgn {
   font-size: 1.6rem;
   font-weight: 500;
-  padding-block: 24px;
+  padding-block: 20px;
   color: #343333;
+  font-family: "VAG Rounded Std Light";
 }
 main .media-page .banner-content button {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 1.2rem;
   padding-block: 14px;
   padding-inline: 12px;
   border-radius: 4px;
   background: #ffc107;
   cursor: pointer;
   border: none;
+  font-family: "VAG Rounded Std Bold";
 }
 main .services-box {
   position: absolute;
@@ -157,15 +163,21 @@ main .services-box .box:hover h4 {
   opacity: 1;
   color: #fff;
   font-size: 1.2rem;
+  font-family: "VAG Rounded Std Light";
+}
+main .services-box .box:hover h4 a:hover {
+  cursor: pointer;
 }
 main .services-box .box:hover .service img {
   filter: invert(1);
 }
 main .services-box .box:hover .text {
   color: #fff;
+  font-family: "VAG Rounded Std Bold";
 }
 main .services-box .box:hover .moto {
   color: #fff;
+  font-family: "VAG Rounded Std Light";
 }
 main .services-box .service img {
   height: 75px;
@@ -177,17 +189,21 @@ main .services-box .service {
 }
 main .services-box .text {
   font-size: 2rem;
-  font-weight: 900;
   padding-top: 10px;
+  font-family: "VAG Rounded Std Bold";
 }
 main .services-box .service h4 {
   opacity: 0;
+}
+main .services-box .service h4 a {
+  color: white;
 }
 main .services-box .moto {
   font-size: 16px;
   font-weight: 600;
   color: #5b5b5b;
   padding-bottom: 10px;
+  font-family: "VAG Rounded Std Light";
 }
 main .services-box .bgimg {
   position: absolute;
@@ -199,7 +215,8 @@ main .services-box .bgimg {
 }
 main .about {
   padding-inline: 300px;
-  padding-top: 230px;
+  padding-top: 300px;
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
   gap: 60px;
@@ -209,25 +226,28 @@ main .about .right-exp-about .top-text p {
   font-size: 1.5rem;
   font-weight: 700;
   padding-block: 16px;
+  font-family: "VAG Rounded Std Light";
 }
 main .about .right-exp-about .mid-bold-text p {
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 800;
+  font-family: "VAG Rounded Std Bold";
 }
 main .about .right-exp-about .last-abt-text p {
   font-size: 1.4rem;
   padding-block: 16px;
   font-weight: 300;
+  font-family: "VAG Rounded Std Light";
 }
 main .about .right-exp-about button {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 1rem;
   padding-block: 14px;
   padding-inline: 9px;
   border-radius: 4px;
   background: #198754;
   cursor: pointer;
   border: none;
+  font-family: "VAG Rounded Std Bold";
 }
 main .customer-portal {
   padding-inline: 300px;
@@ -247,22 +267,26 @@ main .customer-portal .portal .left-mob-img img {
 main .customer-portal .portal .mob-service-content .top-text {
   color: #20c997;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   padding-block: 16px;
+  font-family: "VAG Rounded Std Light";
 }
 main .customer-portal .portal .mob-service-content .mid-bold-text {
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 800;
+  font-family: "VAG Rounded Std Bold";
 }
 main .customer-portal .portal .mob-service-content .about-cp p {
   font-size: 1.2rem;
   padding-block: 16px;
   font-weight: 300;
+  font-family: "VAG Rounded Std Light";
 }
 main .customer-portal .portal .mob-service-content .about-cp .features-cp {
   font-size: 1.2rem;
   font-weight: 300;
   padding-bottom: 24px;
+  font-family: "VAG Rounded Std Light";
 }
 main .customer-portal .portal .mob-service-content .about-cp .features-cp ul {
   display: flex;
@@ -276,14 +300,14 @@ main .customer-portal .portal .mob-service-content .about-cp .features-cp span {
   font-size: 1.4rem;
 }
 main .customer-portal .portal .mob-service-content button {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 1rem;
   padding-block: 14px;
   padding-inline: 9px;
   border-radius: 4px;
   background: #ffc107;
   cursor: pointer;
   border: none;
+  font-family: "VAG Rounded Std Bold";
 }
 main .join-team {
   position: relative;
@@ -301,17 +325,18 @@ main .join-team .upper-content ul .first {
 main .join-team .upper-content ul .first .first-text {
   color: #fff;
   font-size: 1.4rem;
+  font-family: "VAG Rounded Std Light";
 }
 main .join-team .upper-content ul .first .second-text {
   color: #fff;
-  font-size: 2.6rem;
-  font-weight: 800;
+  font-size: 3rem;
   padding-block: 25px;
+  font-family: "VAG Rounded Std Bold";
 }
 main .join-team .upper-content ul .sec .first-text {
   color: #fff;
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.4rem;
+  font-family: "VAG Rounded Std Bold";
 }
 main .join-team .upper-content ul .sec .second-text {
   color: #fff;
@@ -319,6 +344,7 @@ main .join-team .upper-content ul .sec .second-text {
   text-wrap: wrap;
   padding-block: 25px;
   line-height: 1.3;
+  font-family: "VAG Rounded Std Light";
 }
 main .join-team .lower-content {
   float: right;
@@ -331,6 +357,7 @@ main .join-team .lower-content ul li {
   align-items: center;
   gap: 25px;
   padding-block: 10px;
+  font-family: "VAG Rounded Std Light";
 }
 main .join-team .lower-content ul .line {
   border-bottom: 2px solid rgba(32, 37, 32, 0.424);
@@ -341,8 +368,7 @@ main .join-team .lower-content ul span {
   font-weight: 300;
 }
 main .join-team .lower-content button {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 1rem;
   padding-block: 14px;
   padding-inline: 9px;
   border-radius: 4px;
@@ -350,6 +376,7 @@ main .join-team .lower-content button {
   cursor: pointer;
   border: none;
   margin-top: 64px;
+  font-family: "VAG Rounded Std Bold";
 }
 main .join-team .video {
   position: absolute;
@@ -362,35 +389,37 @@ main .join-team .video video {
 }
 main .blog {
   padding-inline: 300px;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 90px;
 }
 main .blog .first-text {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 500;
   color: #20c997;
   text-align: center;
+  font-family: "VAG Rounded Std Light";
 }
 main .blog .sec-text {
   font-size: 3.4rem;
   font-weight: 800;
   text-align: center;
   padding-block: 12px;
+  font-family: "VAG Rounded Std Bold";
 }
 main .blog .boxes {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 60px;
   height: 100%;
 }
 main .blog .box {
   width: 560px;
-  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.509);
-  padding-bottom: 40px;
-  height: 100%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.509);
+  align-self: stretch;
 }
 main .blog .blog-content {
-  padding: 32px 20px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -398,23 +427,27 @@ main .blog .blog-content {
 main .blog .date {
   font-size: 16px;
   color: #20c997;
+  font-family: "VAG Rounded Std Light";
 }
 main .blog .heading {
   font-size: 1.3rem;
   font-weight: bold;
+  font-family: "VAG Rounded Std Light";
 }
 main .blog .blog {
   font-size: 16px;
   line-height: 1.5;
   padding: 0;
+  font-family: "VAG Rounded Std Light";
 }
 main .blog h3 {
   color: #20c997;
+  font-family: "VAG Rounded Std Light";
 }
 main .blog .right-boxes {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
 main .blog .box2 {
   height: 300px;
@@ -432,6 +465,7 @@ footer {
 footer .menu-items {
   display: flex;
   gap: 50px;
+  font-family: "VAG Rounded Std Light";
 }
 footer .menu-items .items ul li {
   padding-bottom: 16px;
@@ -446,6 +480,7 @@ footer .details ul li {
 footer .details ul li a {
   color: #fff;
   font-size: 1.2rem;
+  font-family: "VAG Rounded Std Light";
 }
 footer .details ul li a i {
   color: white;
@@ -453,7 +488,7 @@ footer .details ul li a i {
 footer .details ul li .media-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .rights {
@@ -466,6 +501,7 @@ footer .details ul li .media-links {
   margin-inline: 6px;
   color: green;
   text-decoration: underline;
+  font-family: "VAG Rounded Std Light";
 }
 
 @media (max-width: 768px) {
